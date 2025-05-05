@@ -1,0 +1,58 @@
+/* Recip  e Hero Section */
+.recipe-hero {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .recipe-hero-content {
+    flex: 1;
+    text-align: left; /* Aligns all text to the left */
+  }
+  
+  .recipe-hero-content h1 {
+    font-size: 5rem; /* Makes the heading bigger */
+    color: var(--dark);
+    margin-bottom: 1rem;
+    margin-left: 20%;
+  }
+  
+  .recipe-hero-image {
+    flex: 1;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .recipe-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-left: 15%;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+  }
+  
+  .recipe-meta span {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    gap: 0.5rem;
+  }
+  
+  .recipe-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 50%;
+    color: var(--secondary);
+  }
+  
+  .recipe-rating span {
+    color: var(--text-light);
+    margin-left: 0.5rem;
+  }
+  

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Map - Sarap to the Last Bite</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/foodmap.css">
+ 
+</head>
+<body>
+  <header>  
+    <div class="header-container">
+      <div class="logo">
+        <i class="fas fa-utensils"></i>
+        <h1>Sarap <span>to the Last Bite</span></h1>
+      </div>
+      <nav>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="foodmap.html" class="active">Food Map</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Philippine Food Map</h1>
+      <p>Explore the rich culinary diversity across the 7,641 islands of the Philippines</p>
+    </div>
+  </section>
+  
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Discover Regional Delicacies</h2>
+      </div>
+      <p class="section-subtitle">Click on a region to learn about its signature dishes and culinary traditions</p>
+      
+      <div class="food-map-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Philippines_%28orthographic_projection%29.svg/1200px-Philippines_%28orthographic_projection%29.svg.png" alt="Philippines Map" class="philippines-map">
+        
+        <!-- Luzon -->
+        <div class="region-marker" style="top: 30%; left: 25%;" data-region="ilocos"></div>
+        <div class="region-marker" style="top: 40%; left: 30%;" data-region="cordillera"></div>
+        <div class="region-marker" style="top: 50%; left: 35%;" data-region="central-luzon"></div>
+        <div class="region-marker" style="top: 60%; left: 40%;" data-region="metro-manila"></div>
+        <div class="region-marker" style="top: 65%; left: 45%;" data-region="calabarzon"></div>
+        <div class="region-marker" style="top: 70%; left: 50%;" data-region="bicol"></div>
+        
+        <!-- Visayas  -->
+        <div class="region-marker" style="top: 60%; left: 20%;" data-region="western-visayas"></div>
+        <div class="region-marker" style="top: 65%; left: 25%;" data-region="central-visayas"></div>
+        <div class="region-marker" style="top: 70%; left: 30%;" data-region="eastern-visayas"></div>
+        
+        <!-- Mindanao  -->
+        <div class="region-marker" style="top: 75%; left: 35%;" data-region="northern-mindanao"></div>
+        <div class="region-marker" style="top: 80%; left: 40%;" data-region="davao"></div>
+        <div class="region-marker" style="top: 85%; left: 45%;" data-region="soccsksargen"></div>
+        <div class="region-marker" style="top: 80%; left: 50%;" data-region="zamboanga"></div>
+        <div class="region-marker" style="top: 75%; left: 55%;" data-region="barmm"></div>
+        
+        <!-- Region  -->
+        <div class="region-info" id="ilocos-info">
+          <h3>Ilocos Region</h3>
+          <p>Known for its bold, salty flavors and inventive vegetable dishes.</p>
+          <ul class="region-dishes">
+            <li><a href="recipes/empanada.html">Ilocos Empanada</a></li>
+            <li><a href="recipes/bagnet.html">Bagnet</a></li>
+            <li><a href="recipes/pinakbet.html">Pinakbet</a></li>
+          </ul>
+        </div>
+        
+        <div class="region-info" id="bicol-info">
+          <h3>Bicol Region</h3>
+          <p>Famous for its spicy coconut milk-based dishes and fiery chili peppers.</p>
+          <ul class="region-dishes">
+            <li><a href="recipes/bicol-express.html">Bicol Express</a></li>
+            <li><a href="recipes/laing.html">Laing</a></li>
+            <li><a href="recipes/pinangat.html">Pinangat</a></li>
+          </ul>
+        </div>
+        
+        <div class="region-info" id="central-visayas-info">
+          <h3>Central Visayas</h3>
+          <p>Home of sweet and savory dishes with Spanish influences.</p>
+          <ul class="region-dishes">
+            <li><a href="recipes/lechon.html">Cebu Lechon</a></li>
+            <li><a href="recipes/puso.html">Puso (Hanging Rice)</a></li>
+            <li><a href="recipes/larsian.html">Larsian Barbecue</a></li>
+          </ul>
+        </div>
+        
+        <div class="region-info" id="davao-info">
+          <h3>Davao Region</h3>
+          <p>Known for its exotic fruits and seafood specialties.</p>
+          <ul class="region-dishes">
+            <li><a href="recipes/durian.html">Durian Delicacies</a></li>
+            <li><a href="recipes/kinilaw.html">Kinilaw</a></li>
+            <li><a href="recipes/pyanggang.html">Pyanggang Manok</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="regional-dishes">
+        <div class="dish-card">
+          <img src=https://homefoodie.com.ph/uploads/2016/11/Bicol-Express_017.jpg alt="Bicol Express" class="dish-card-img">
+          <div class="dish-card-content">
+            <h3>Bicol Express</h3>
+            <p>Spicy pork stew cooked in coconut milk with lots of chili peppers - Bicol Region's signature dish.</p>
+            <a href="bicolexpress.html" class="dish-card-link">
+              View Recipe <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="dish-card">
+          <img src=https://www.foxyfolksy.com/wp-content/uploads/2015/07/bacolod-chicken-inasal.jpg alt="Chicken Inasal" class="dish-card-img">
+          <div class="dish-card-content">
+            <h3>Chicken Inasal</h3>
+            <p>Grilled chicken marinated in calamansi, pepper, and annatto - a Bacolod specialty.</p>
+            <a href="chickenInasal.html" class="dish-card-link">
+              View Recipe <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="dish-card">
+          <img src=https://assets.unileversolutions.com/recipes-v3/251580-default.jpg alt="Tiyula Itum" class="dish-card-img">
+          <div class="dish-card-content">
+            <h3>Tiyula Itum</h3>
+            <p>Black soup made with beef and burnt coconut from Tausug cuisine in Sulu.</p>
+            <a href="tiyulaitum.html" class="dish-card-link">
+              View Recipe <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="newsletter">
+    <div class="container">
+      <h2>Get Our Regional Recipe Guide</h2>
+      <p>Subscribe to receive a free PDF guide featuring signature dishes from all 17 regions of the Philippines.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>  
+  
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>Sarap to the Last Bite</h3>
+        <p>Discovering and sharing the rich flavors of Filipino cuisine with food lovers around the world.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="foodmap.html" class="active">Food Map</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Regional Specialties</h3>
+        <ul class="footer-links">
+          <li><a href="recipes/bicol-express.html">Bicol Express</a></li>
+          <li><a href="recipes/lechon.html">Cebu Lechon</a></li>
+          <li><a href="recipes/vigan-longganisa.html">Vigan Longganisa</a></li>
+          <li><a href="recipes/durian-candy.html">Durian Candy</a></li>
+          <li><a href="recipes/pancit-malabon.html">Pancit Malabon</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <ul class="footer-links">
+          <li><i class="fas fa-map-marker-alt"></i> 123 Food Street, Manila, Philippines</li>
+          <li><i class="fas fa-phone"></i> +63 912 345 6789</li>
+          <li><i class="fas fa-envelope"></i> hello@saraptothelastbite.com</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Sarap to the Last Bite. All rights reserved. | <a href="privacy.html" style="color: rgba(255,255,255,0.7);">Privacy Policy</a> | <a href="terms.html" style="color: rgba(255,255,255,0.7);">Terms of Service</a></p>
+    </div>
+  </footer>
+  
+</body>
+</html>
